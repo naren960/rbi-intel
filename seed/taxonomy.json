@@ -1,0 +1,1572 @@
+{
+  "_comment": "Single source of truth for document enrichment, read by BOTH python/rbi_intel/taxonomy.py and src/util/taxonomy.ts. Do not fork it. source='sber' entries came from RBI_CIRCULARS_UPDATE_PAGE.py; source='added' entries were drafted from public RBI regulatory vocabulary and should be reviewed before being relied on.",
+  "version": 2,
+  "institution_types": [
+    {
+      "name": "Scheduled Commercial Banks",
+      "patterns": [
+        "Scheduled Commercial Bank",
+        "Scheduled Commercial Banks",
+        "All Scheduled Commercial Banks",
+        "Scheduled Commercial Banks (SCB)"
+      ],
+      "case_sensitive": false,
+      "source": "sber"
+    },
+    {
+      "name": "Scheduled Commercial Banks",
+      "patterns": [
+        "SCB",
+        "SCBs"
+      ],
+      "case_sensitive": true,
+      "source": "sber"
+    },
+    {
+      "name": "Commercial Banks",
+      "patterns": [
+        "Commercial Bank",
+        "Commercial Banks"
+      ],
+      "case_sensitive": false,
+      "source": "sber"
+    },
+    {
+      "name": "Foreign Banks",
+      "patterns": [
+        "Foreign Bank",
+        "Foreign Banks"
+      ],
+      "case_sensitive": false,
+      "source": "sber"
+    },
+    {
+      "name": "All India Financial Institutions",
+      "patterns": [
+        "All India Financial Institution",
+        "All India Financial Institutions"
+      ],
+      "case_sensitive": false,
+      "source": "sber"
+    },
+    {
+      "name": "NBFC",
+      "patterns": [
+        "NBFC",
+        "NBFCs"
+      ],
+      "case_sensitive": true,
+      "source": "sber"
+    },
+    {
+      "name": "NBFC",
+      "patterns": [
+        "Non-Banking Financial Company",
+        "Non-Banking Financial Companies",
+        "Non Banking Financial Company",
+        "Non Banking Financial Companies"
+      ],
+      "case_sensitive": false,
+      "source": "sber"
+    },
+    {
+      "name": "Housing Finance Companies",
+      "patterns": [
+        "Housing Finance Company",
+        "Housing Finance Companies"
+      ],
+      "case_sensitive": false,
+      "source": "sber"
+    },
+    {
+      "name": "Housing Finance Companies",
+      "patterns": [
+        "HFC",
+        "HFCs"
+      ],
+      "case_sensitive": true,
+      "source": "added"
+    },
+    {
+      "name": "Core Investment Companies",
+      "patterns": [
+        "Core Investment Company",
+        "Core Investment Companies"
+      ],
+      "case_sensitive": false,
+      "source": "sber"
+    },
+    {
+      "name": "Core Investment Companies",
+      "patterns": [
+        "CIC",
+        "CICs"
+      ],
+      "case_sensitive": true,
+      "source": "added"
+    },
+    {
+      "name": "Asset Reconstruction Companies",
+      "patterns": [
+        "Asset Reconstruction Company",
+        "Asset Reconstruction Companies"
+      ],
+      "case_sensitive": false,
+      "source": "sber"
+    },
+    {
+      "name": "Asset Reconstruction Companies",
+      "patterns": [
+        "ARC",
+        "ARCs"
+      ],
+      "case_sensitive": true,
+      "source": "added"
+    },
+    {
+      "name": "Credit Information Companies",
+      "patterns": [
+        "Credit Information Company",
+        "Credit Information Companies"
+      ],
+      "case_sensitive": false,
+      "source": "sber"
+    },
+    {
+      "name": "Urban Co-operative Banks",
+      "patterns": [
+        "Urban Co-operative Bank",
+        "Urban Co-operative Banks",
+        "Urban Cooperative Bank",
+        "Urban Cooperative Banks",
+        "Primary (Urban) Co-operative Bank",
+        "Primary (Urban) Co-operative Banks"
+      ],
+      "case_sensitive": false,
+      "source": "sber"
+    },
+    {
+      "name": "Urban Co-operative Banks",
+      "patterns": [
+        "UCB",
+        "UCBs"
+      ],
+      "case_sensitive": true,
+      "source": "sber"
+    },
+    {
+      "name": "Rural Co-operative Banks",
+      "patterns": [
+        "Rural Co-operative Bank",
+        "Rural Co-operative Banks",
+        "Rural Cooperative Bank",
+        "Rural Cooperative Banks"
+      ],
+      "case_sensitive": false,
+      "source": "sber"
+    },
+    {
+      "name": "Regional Rural Banks",
+      "patterns": [
+        "Regional Rural Bank",
+        "Regional Rural Banks"
+      ],
+      "case_sensitive": false,
+      "source": "sber"
+    },
+    {
+      "name": "Regional Rural Banks",
+      "patterns": [
+        "RRB",
+        "RRBs"
+      ],
+      "case_sensitive": true,
+      "source": "sber"
+    },
+    {
+      "name": "Small Finance Banks",
+      "patterns": [
+        "Small Finance Bank",
+        "Small Finance Banks"
+      ],
+      "case_sensitive": false,
+      "source": "sber"
+    },
+    {
+      "name": "Small Finance Banks",
+      "patterns": [
+        "SFB",
+        "SFBs"
+      ],
+      "case_sensitive": true,
+      "source": "sber"
+    },
+    {
+      "name": "Payments Banks",
+      "patterns": [
+        "Payments Bank",
+        "Payments Banks",
+        "Payment Bank",
+        "Payment Banks"
+      ],
+      "case_sensitive": false,
+      "source": "sber"
+    },
+    {
+      "name": "Payments Banks",
+      "patterns": [
+        "PB",
+        "PBs"
+      ],
+      "case_sensitive": true,
+      "source": "sber"
+    },
+    {
+      "name": "Local Area Banks",
+      "patterns": [
+        "Local Area Bank",
+        "Local Area Banks"
+      ],
+      "case_sensitive": false,
+      "source": "sber"
+    },
+    {
+      "name": "Local Area Banks",
+      "patterns": [
+        "LAB",
+        "LABs"
+      ],
+      "case_sensitive": true,
+      "source": "sber"
+    },
+    {
+      "name": "Mortgage Guarantee Companies",
+      "patterns": [
+        "Mortgage Guarantee Company",
+        "Mortgage Guarantee Companies"
+      ],
+      "case_sensitive": false,
+      "source": "sber"
+    },
+    {
+      "name": "Primary Dealers",
+      "patterns": [
+        "Primary Dealer",
+        "Primary Dealers",
+        "Standalone Primary Dealer",
+        "Standalone Primary Dealers"
+      ],
+      "case_sensitive": false,
+      "source": "sber"
+    },
+    {
+      "name": "Payment System Operators",
+      "patterns": [
+        "Payment System Operator",
+        "Payment System Operators",
+        "Payment System Providers"
+      ],
+      "case_sensitive": false,
+      "source": "sber"
+    },
+    {
+      "name": "State Co-operative Banks",
+      "patterns": [
+        "State Co-operative Bank",
+        "State Co-operative Banks",
+        "StCB",
+        "StCBs"
+      ],
+      "case_sensitive": false,
+      "source": "added"
+    },
+    {
+      "name": "District Central Co-operative Banks",
+      "patterns": [
+        "District Central Co-operative Bank",
+        "District Central Co-operative Banks",
+        "Central Co-operative Bank",
+        "Central Co-operative Banks",
+        "DCCB",
+        "DCCBs"
+      ],
+      "case_sensitive": false,
+      "source": "added"
+    },
+    {
+      "name": "All India Financial Institutions",
+      "patterns": [
+        "NABARD",
+        "SIDBI",
+        "EXIM Bank",
+        "National Housing Bank",
+        "NaBFID"
+      ],
+      "case_sensitive": false,
+      "source": "added"
+    },
+    {
+      "name": "Authorised Dealers",
+      "patterns": [
+        "Authorised Dealer",
+        "Authorised Dealers",
+        "AD Category-I",
+        "AD Category - I",
+        "Authorised Person",
+        "Authorised Persons"
+      ],
+      "case_sensitive": false,
+      "source": "added"
+    },
+    {
+      "name": "Full Fledged Money Changers",
+      "patterns": [
+        "Full Fledged Money Changer",
+        "Full Fledged Money Changers",
+        "FFMC",
+        "FFMCs"
+      ],
+      "case_sensitive": false,
+      "source": "added"
+    },
+    {
+      "name": "Payment Aggregators",
+      "patterns": [
+        "Payment Aggregator",
+        "Payment Aggregators"
+      ],
+      "case_sensitive": false,
+      "source": "added"
+    },
+    {
+      "name": "Account Aggregators",
+      "patterns": [
+        "Account Aggregator",
+        "Account Aggregators",
+        "NBFC-AA"
+      ],
+      "case_sensitive": false,
+      "source": "added"
+    },
+    {
+      "name": "Peer to Peer Lending Platforms",
+      "patterns": [
+        "Peer to Peer Lending",
+        "Peer-to-Peer Lending",
+        "NBFC-P2P"
+      ],
+      "case_sensitive": false,
+      "source": "added"
+    },
+    {
+      "name": "Infrastructure Debt Funds",
+      "patterns": [
+        "Infrastructure Debt Fund",
+        "Infrastructure Debt Funds",
+        "IDF"
+      ],
+      "case_sensitive": false,
+      "source": "added"
+    },
+    {
+      "name": "Factors",
+      "patterns": [
+        "NBFC-Factor",
+        "NBFC-Factors",
+        "Factoring Company",
+        "Factoring Companies"
+      ],
+      "case_sensitive": false,
+      "source": "added"
+    },
+    {
+      "name": "White Label ATM Operators",
+      "patterns": [
+        "White Label ATM",
+        "White Label ATMs",
+        "White Label ATM Operator",
+        "White Label ATM Operators"
+      ],
+      "case_sensitive": false,
+      "source": "added"
+    },
+    {
+      "name": "Credit Card Issuers",
+      "patterns": [
+        "Card Issuer",
+        "Card Issuers",
+        "Credit Card Issuer",
+        "Credit Card Issuers"
+      ],
+      "case_sensitive": false,
+      "source": "added"
+    },
+    {
+      "name": "Co-operative Banks (generic)",
+      "patterns": [
+        "Co-operative Bank",
+        "Co-operative Banks",
+        "Cooperative Bank",
+        "Cooperative Banks"
+      ],
+      "case_sensitive": false,
+      "source": "added"
+    }
+  ],
+  "applicability": {
+    "values": [
+      "Applicable",
+      "Likely Applicable",
+      "Not Applicable"
+    ],
+    "default": {
+      "value": "Likely Applicable",
+      "rule": "Default"
+    },
+    "rules": [
+      {
+        "rule": "Rule 1 — Guidance Note",
+        "value": "Applicable",
+        "regex": "\\bGuidance Notes?\\b",
+        "source": "sber"
+      },
+      {
+        "rule": "Rule 2 — Commercial Banks",
+        "value": "Applicable",
+        "regex": "(?<!\\w)Commercial Banks(?!\\w)",
+        "source": "sber"
+      },
+      {
+        "rule": "Rule 3 — SCB",
+        "value": "Applicable",
+        "regex": "(?<!\\w)SCBs?(?!\\w)",
+        "case_sensitive": true,
+        "source": "sber"
+      }
+    ],
+    "excluded_institutions": [
+      "All India Financial Institutions",
+      "Asset Reconstruction Companies",
+      "Urban Co-operative Banks",
+      "Rural Co-operative Banks",
+      "State Co-operative Banks",
+      "District Central Co-operative Banks",
+      "Co-operative Banks (generic)",
+      "Regional Rural Banks",
+      "Payments Banks",
+      "Credit Information Companies",
+      "Small Finance Banks",
+      "Local Area Banks",
+      "Core Investment Companies",
+      "Housing Finance Companies",
+      "NBFC",
+      "Mortgage Guarantee Companies",
+      "Payment System Operators",
+      "Account Aggregators",
+      "Peer to Peer Lending Platforms",
+      "Infrastructure Debt Funds",
+      "Factors",
+      "White Label ATM Operators",
+      "Full Fledged Money Changers",
+      "Payment Aggregators"
+    ],
+    "exclusion_rule_label": "Rule 4 — institution-specific exclusion"
+  },
+  "topics": {
+    "Capital Adequacy": {
+      "group": "Prudential Regulation",
+      "keywords": [
+        "Basel",
+        "Basel III",
+        "Capital Adequacy",
+        "Capital Regulations",
+        "Capital Conservation Buffer",
+        "Capital Charge",
+        "Risk Weighted Assets",
+        "Tier I Capital",
+        "Tier II Capital",
+        "Leverage Ratio",
+        "Countercyclical Capital Buffer"
+      ],
+      "source": "sber"
+    },
+    "Asset Liability Management (ALM)": {
+      "group": "Prudential Regulation",
+      "keywords": [
+        "Asset Liability Management",
+        "ALM",
+        "Interest Rate Risk in the Banking Book",
+        "IRRBB",
+        "Liquidity Coverage Ratio",
+        "LCR",
+        "Net Stable Funding Ratio",
+        "NSFR"
+      ],
+      "source": "sber"
+    },
+    "Credit Risk Management": {
+      "group": "Prudential Regulation",
+      "keywords": [
+        "Credit Risk Management",
+        "Credit Risk",
+        "Loan Classification",
+        "Credit Appraisal",
+        "Bank Finance",
+        "Exposure Norms",
+        "Credit Concentration",
+        "Prudential Norms on Advances"
+      ],
+      "source": "sber+added"
+    },
+    "Concentration Risk Management": {
+      "group": "Prudential Regulation",
+      "keywords": [
+        "Concentration Risk Management",
+        "Concentration Risk",
+        "Large Exposures Framework",
+        "Group Exposure",
+        "Single Borrower Limit",
+        "Single Counterparty"
+      ],
+      "source": "sber"
+    },
+    "Investment Portfolio": {
+      "group": "Prudential Regulation",
+      "keywords": [
+        "Investment Portfolio",
+        "Investment Classification",
+        "Investments",
+        "Held to Maturity",
+        "Available for Sale",
+        "Held for Trading",
+        "Non-SLR Investments",
+        "Valuation of Investments",
+        "Fair Value through Profit and Loss",
+        "FVTPL",
+        "AFS Reserve"
+      ],
+      "source": "sber+added"
+    },
+    "Income Recognition, Asset Classification & Provisioning (IRACP)": {
+      "group": "Prudential Regulation",
+      "keywords": [
+        "Income Recognition",
+        "Asset Classification",
+        "Provisioning",
+        "IRACP",
+        "Non-Performing Assets",
+        "NPA"
+      ],
+      "source": "sber"
+    },
+    "Resolution of Stressed Assets": {
+      "group": "Prudential Regulation",
+      "keywords": [
+        "Resolution of Stressed Assets",
+        "Stressed Assets",
+        "Restructuring of Advances",
+        "Prudential Framework for Resolution",
+        "Insolvency and Bankruptcy",
+        "IBC",
+        "Asset Reconstruction",
+        "Security Receipts",
+        "SARFAESI",
+        "One Time Settlement"
+      ],
+      "source": "sber+added"
+    },
+    "Securitisation": {
+      "group": "Prudential Regulation",
+      "keywords": [
+        "Securitisation",
+        "Securitization",
+        "Direct Assignment",
+        "Asset Backed Securities"
+      ],
+      "source": "sber"
+    },
+    "Transfer & Distribution of Credit Risk": {
+      "group": "Prudential Regulation",
+      "keywords": [
+        "Transfer and Distribution of Credit Risk",
+        "Transfer & Distribution of Credit Risk",
+        "Loan Transfer",
+        "Sale of Loan Exposures",
+        "Transfer of Loan Exposures",
+        "Transfer of Loan Exposure"
+      ],
+      "source": "sber+added"
+    },
+    "Resource Raising": {
+      "group": "Prudential Regulation",
+      "keywords": [
+        "Resource Raising",
+        "Raising of Resources",
+        "Bonds Issuance",
+        "Perpetual Debt Instruments",
+        "Additional Tier 1 Bonds"
+      ],
+      "source": "sber"
+    },
+    "Financial Statements & Disclosures": {
+      "group": "Prudential Regulation",
+      "keywords": [
+        "Financial Statements",
+        "Disclosures",
+        "Notes to Accounts",
+        "Balance Sheet Disclosure",
+        "Pillar 3 Disclosures"
+      ],
+      "source": "sber"
+    },
+    "Digital Lending": {
+      "group": "Retail Banking & Financial Inclusion",
+      "keywords": [
+        "Digital Lending",
+        "Digital Lending Apps",
+        "Lending Service Provider",
+        "Collaborative Lending",
+        "Co-Lending"
+      ],
+      "source": "sber+added"
+    },
+    "KYC / AML": {
+      "group": "Conduct, Compliance & Governance",
+      "keywords": [
+        "KYC",
+        "Know Your Customer",
+        "AML",
+        "Anti-Money Laundering",
+        "Combating Financing of Terrorism",
+        "CFT",
+        "PMLA",
+        "Customer Due Diligence"
+      ],
+      "source": "sber"
+    },
+    "Governance": {
+      "group": "Conduct, Compliance & Governance",
+      "keywords": [
+        "Governance",
+        "Corporate Governance",
+        "Board of Directors",
+        "Fit and Proper Criteria",
+        "Composition of the Board",
+        "Compliance Function",
+        "Risk Management Committee",
+        "Staff Matters",
+        "Whole Time Directors",
+        "Chief Executive Officer",
+        "Chief Risk Officer",
+        "Chief Compliance Officer"
+      ],
+      "source": "sber+added"
+    },
+    "Internal Ombudsman": {
+      "group": "Conduct, Compliance & Governance",
+      "keywords": [
+        "Internal Ombudsman",
+        "Ombudsman Scheme"
+      ],
+      "source": "sber"
+    },
+    "Responsible Business Conduct": {
+      "group": "Conduct, Compliance & Governance",
+      "keywords": [
+        "Responsible Business Conduct",
+        "Fair Practices Code",
+        "Customer Service",
+        "Grievance Redressal",
+        "Responsible Lending"
+      ],
+      "source": "sber"
+    },
+    "Outsourcing Risk": {
+      "group": "Conduct, Compliance & Governance",
+      "keywords": [
+        "Outsourcing Risk",
+        "Outsourcing of Financial Services",
+        "Third Party Vendor",
+        "Managed Service Provider"
+      ],
+      "source": "sber"
+    },
+    "Fraud Risk Management": {
+      "group": "Conduct, Compliance & Governance",
+      "keywords": [
+        "Fraud Risk Management",
+        "Fraud Monitoring",
+        "Fraud Classification",
+        "Frauds in Banks"
+      ],
+      "source": "sber"
+    },
+    "Credit Information Reporting": {
+      "group": "Conduct, Compliance & Governance",
+      "keywords": [
+        "Credit Information Reporting",
+        "Credit Information Companies",
+        "Credit Information Report",
+        "CIC"
+      ],
+      "source": "sber"
+    },
+    "Consumer Protection": {
+      "group": "Conduct, Compliance & Governance",
+      "keywords": [
+        "Customer Protection",
+        "Customer Service",
+        "Grievance",
+        "Complaint",
+        "Banking Ombudsman",
+        "Penal Charges",
+        "Penal Interest",
+        "Minimum Balance",
+        "Service Charges",
+        "Reasonableness of Charges"
+      ],
+      "source": "sber+added"
+    },
+    "Wilful Defaulters": {
+      "group": "Conduct, Compliance & Governance",
+      "keywords": [
+        "Wilful Defaulters",
+        "Wilful Defaulter",
+        "Non-Cooperative Borrowers"
+      ],
+      "source": "sber"
+    },
+    "Licensing & Authorisation": {
+      "group": "Conduct, Compliance & Governance",
+      "keywords": [
+        "Licensing",
+        "Authorisation",
+        "Certificate of Registration",
+        "Grant of Licence",
+        "Registration of NBFC",
+        "Scale Based Regulation",
+        "Regulatory Framework",
+        "On-tap Licensing"
+      ],
+      "source": "sber+added"
+    },
+    "Foreign Exchange (FEMA)": {
+      "group": "Treasury & Financial Markets",
+      "keywords": [
+        "Foreign Exchange",
+        "FEMA",
+        "Foreign Exchange Management Act",
+        "FDI",
+        "Foreign Direct Investment"
+      ],
+      "source": "sber"
+    },
+    "Overseas Investment": {
+      "group": "Treasury & Financial Markets",
+      "keywords": [
+        "Overseas Investment",
+        "Overseas Direct Investment",
+        "ODI"
+      ],
+      "source": "sber"
+    },
+    "External Commercial Borrowings (ECB)": {
+      "group": "Treasury & Financial Markets",
+      "keywords": [
+        "External Commercial Borrowings",
+        "ECB",
+        "Trade Credit"
+      ],
+      "source": "sber"
+    },
+    "Money Market": {
+      "group": "Treasury & Financial Markets",
+      "keywords": [
+        "Money Market",
+        "Call Money",
+        "Certificate of Deposit",
+        "Commercial Paper"
+      ],
+      "source": "sber"
+    },
+    "Derivatives": {
+      "group": "Treasury & Financial Markets",
+      "keywords": [
+        "Derivatives",
+        "Interest Rate Derivatives",
+        "Currency Derivatives",
+        "Credit Default Swaps"
+      ],
+      "source": "sber"
+    },
+    "Repo": {
+      "group": "Treasury & Financial Markets",
+      "keywords": [
+        "Repo",
+        "Reverse Repo",
+        "Tri-party Repo"
+      ],
+      "source": "sber"
+    },
+    "NDS-OM": {
+      "group": "Treasury & Financial Markets",
+      "keywords": [
+        "NDS-OM",
+        "Negotiated Dealing System",
+        "Order Matching"
+      ],
+      "source": "sber"
+    },
+    "Primary Dealers": {
+      "group": "Treasury & Financial Markets",
+      "keywords": [
+        "Primary Dealers",
+        "Standalone Primary Dealers"
+      ],
+      "source": "sber"
+    },
+    "Trade Receivables Discounting (TReDS)": {
+      "group": "Treasury & Financial Markets",
+      "keywords": [
+        "TReDS",
+        "Trade Receivables Discounting System",
+        "Trade Receivables and Discounting"
+      ],
+      "source": "sber"
+    },
+    "Payment Systems": {
+      "group": "Payments & Currency",
+      "keywords": [
+        "Payment Systems",
+        "Payment and Settlement Systems",
+        "PSS Act",
+        "RTGS",
+        "NEFT"
+      ],
+      "source": "sber"
+    },
+    "Digital Payments": {
+      "group": "Payments & Currency",
+      "keywords": [
+        "Digital Payments",
+        "UPI",
+        "Unified Payments Interface",
+        "Digital Payment Security Controls"
+      ],
+      "source": "sber"
+    },
+    "Payment Aggregators": {
+      "group": "Payments & Currency",
+      "keywords": [
+        "Payment Aggregators",
+        "Payment Gateways",
+        "PA-PG"
+      ],
+      "source": "sber"
+    },
+    "Prepaid Payment Instruments (PPI)": {
+      "group": "Payments & Currency",
+      "keywords": [
+        "Prepaid Payment Instruments",
+        "PPI",
+        "Wallets"
+      ],
+      "source": "sber"
+    },
+    "Currency Management": {
+      "group": "Payments & Currency",
+      "keywords": [
+        "Currency Management",
+        "Clean Note Policy",
+        "Distribution of Banknotes",
+        "Currency Distribution",
+        "Currency Distribution & Exchange Scheme",
+        "Note Sorting",
+        "Soiled Notes",
+        "Mutilated Notes"
+      ],
+      "source": "sber+added"
+    },
+    "Currency Chests": {
+      "group": "Payments & Currency",
+      "keywords": [
+        "Currency Chests",
+        "Small Coin Depots"
+      ],
+      "source": "sber"
+    },
+    "Counterfeit Notes": {
+      "group": "Payments & Currency",
+      "keywords": [
+        "Counterfeit Notes",
+        "Detection of Counterfeit"
+      ],
+      "source": "sber"
+    },
+    "Money Transfer Services": {
+      "group": "Payments & Currency",
+      "keywords": [
+        "Money Transfer Services",
+        "Money Transfer Service Scheme",
+        "MTSS"
+      ],
+      "source": "sber"
+    },
+    "Housing Finance": {
+      "group": "Retail Banking & Financial Inclusion",
+      "keywords": [
+        "Housing Finance",
+        "Housing Loans",
+        "Affordable Housing",
+        "Housing Finance Company",
+        "Housing Finance Companies"
+      ],
+      "source": "sber+added"
+    },
+    "MSME Finance": {
+      "group": "Retail Banking & Financial Inclusion",
+      "keywords": [
+        "MSME Finance",
+        "Micro, Small and Medium Enterprises",
+        "MSME"
+      ],
+      "source": "sber"
+    },
+    "Priority Sector Lending": {
+      "group": "Retail Banking & Financial Inclusion",
+      "keywords": [
+        "Priority Sector Lending",
+        "PSL",
+        "Priority Sector Targets",
+        "Priority Sector"
+      ],
+      "source": "sber+added"
+    },
+    "Kisan Credit Card": {
+      "group": "Retail Banking & Financial Inclusion",
+      "keywords": [
+        "Kisan Credit Card",
+        "KCC"
+      ],
+      "source": "sber"
+    },
+    "SHG-Bank Linkage": {
+      "group": "Retail Banking & Financial Inclusion",
+      "keywords": [
+        "SHG-Bank Linkage",
+        "Self Help Group",
+        "SHG Bank Linkage Programme"
+      ],
+      "source": "sber"
+    },
+    "Lead Bank Scheme": {
+      "group": "Retail Banking & Financial Inclusion",
+      "keywords": [
+        "Lead Bank Scheme",
+        "Lead District Manager",
+        "District Consultative Committee"
+      ],
+      "source": "sber"
+    },
+    "Credit Cards & Debit Cards": {
+      "group": "Retail Banking & Financial Inclusion",
+      "keywords": [
+        "Credit Cards",
+        "Debit Cards",
+        "Co-Branded Cards",
+        "Credit Card",
+        "Debit Card",
+        "Card Issuance"
+      ],
+      "source": "sber+added"
+    },
+    "Information Technology": {
+      "group": "Technology & Operational Resilience",
+      "keywords": [
+        "Information Technology",
+        "IT Systems",
+        "Data Localisation",
+        "IT Infrastructure"
+      ],
+      "source": "sber"
+    },
+    "IT Governance": {
+      "group": "Technology & Operational Resilience",
+      "keywords": [
+        "IT Governance",
+        "Information Technology Governance",
+        "IT Risk Management"
+      ],
+      "source": "sber"
+    },
+    "Cyber Resilience": {
+      "group": "Technology & Operational Resilience",
+      "keywords": [
+        "Cyber Resilience",
+        "Cyber Security",
+        "Cyber Security Framework",
+        "Cyber Security Incident",
+        "Cyber Incident",
+        "Security Operations Centre",
+        "SOC",
+        "Information Security",
+        "Information Security Management",
+        "ISMS"
+      ],
+      "source": "sber"
+    },
+    "Operational Risk": {
+      "group": "Technology & Operational Resilience",
+      "keywords": [
+        "Operational Risk",
+        "Operational Risk Management"
+      ],
+      "source": "sber"
+    },
+    "Operational Resilience": {
+      "group": "Technology & Operational Resilience",
+      "keywords": [
+        "Operational Resilience",
+        "Business Continuity",
+        "Business Continuity Plan",
+        "Business Continuity Management",
+        "BCP",
+        "BCM",
+        "Disaster Recovery",
+        "DR Site"
+      ],
+      "source": "sber"
+    },
+    "Climate Risk": {
+      "group": "Technology & Operational Resilience",
+      "keywords": [
+        "Climate Risk",
+        "Climate Change Risk",
+        "Climate Finance",
+        "Green Deposits",
+        "Sustainable Finance",
+        "ESG"
+      ],
+      "source": "sber"
+    },
+    "Branch Authorisation": {
+      "group": "Institution-Specific Administration",
+      "keywords": [
+        "Branch Authorisation",
+        "Branch Licensing",
+        "Opening of Branches"
+      ],
+      "source": "sber"
+    },
+    "Interest Rate on Deposits": {
+      "group": "Institution-Specific Administration",
+      "keywords": [
+        "Interest Rate on Deposits",
+        "Interest Rates on Deposits",
+        "Term Deposit Interest"
+      ],
+      "source": "sber"
+    },
+    "Interest Rates on Advances": {
+      "group": "Institution-Specific Administration",
+      "keywords": [
+        "Interest Rates on Advances",
+        "Interest Rate on Advances",
+        "Base Rate",
+        "MCLR",
+        "External Benchmark Lending Rate"
+      ],
+      "source": "sber"
+    },
+    "Cash Reserve Ratio (CRR)": {
+      "group": "Institution-Specific Administration",
+      "keywords": [
+        "Cash Reserve Ratio",
+        "CRR"
+      ],
+      "source": "sber"
+    },
+    "Statutory Liquidity Ratio (SLR)": {
+      "group": "Institution-Specific Administration",
+      "keywords": [
+        "Statutory Liquidity Ratio",
+        "SLR"
+      ],
+      "source": "sber"
+    },
+    "Acquisition & Holding of Shares": {
+      "group": "Institution-Specific Administration",
+      "keywords": [
+        "Acquisition and Holding of Shares",
+        "Acquisition & Holding of Shares",
+        "Shareholding",
+        "Substantial Interest"
+      ],
+      "source": "sber"
+    },
+    "Voluntary Amalgamation": {
+      "group": "Institution-Specific Administration",
+      "keywords": [
+        "Voluntary Amalgamation",
+        "Merger of Banks",
+        "Amalgamation of Co-operative Banks",
+        "Amalgamation of Urban Cooperative Banks",
+        "Amalgamation of Urban Co-operative Banks",
+        "Amalgamation"
+      ],
+      "source": "sber+added"
+    },
+    "Miscellaneous": {
+      "group": "Institution-Specific Administration",
+      "keywords": [
+        "Miscellaneous"
+      ],
+      "source": "sber"
+    },
+    "Market Risk": {
+      "group": "Prudential Regulation",
+      "keywords": [
+        "Market Risk",
+        "Market Risk Management",
+        "Trading Book",
+        "Fundamental Review of the Trading Book",
+        "FRTB",
+        "Value at Risk"
+      ],
+      "source": "added"
+    },
+    "Counterparty Credit Risk": {
+      "group": "Prudential Regulation",
+      "keywords": [
+        "Counterparty Credit Risk",
+        "Credit Valuation Adjustment",
+        "Central Counterparty",
+        "Default Fund",
+        "Bilateral Netting"
+      ],
+      "source": "added"
+    },
+    "Country Risk": {
+      "group": "Prudential Regulation",
+      "keywords": [
+        "Country Risk",
+        "Country Exposure",
+        "Cross-Border Exposure"
+      ],
+      "source": "added"
+    },
+    "Unhedged Foreign Currency Exposure": {
+      "group": "Prudential Regulation",
+      "keywords": [
+        "Unhedged Foreign Currency Exposure",
+        "UFCE"
+      ],
+      "source": "added"
+    },
+    "Capital Market Exposure": {
+      "group": "Prudential Regulation",
+      "keywords": [
+        "Capital Market Exposure",
+        "Bank Finance against Shares",
+        "Advances against Shares",
+        "Lending Against Shares"
+      ],
+      "source": "added"
+    },
+    "Real Estate & Commercial Real Estate Exposure": {
+      "group": "Prudential Regulation",
+      "keywords": [
+        "Commercial Real Estate",
+        "Real Estate Exposure",
+        "Loan to Value",
+        "LTV Ratio"
+      ],
+      "source": "added"
+    },
+    "Prompt Corrective Action (PCA)": {
+      "group": "Prudential Regulation",
+      "keywords": [
+        "Prompt Corrective Action",
+        "PCA Framework"
+      ],
+      "source": "added"
+    },
+    "Systemically Important Banks (D-SIB)": {
+      "group": "Prudential Regulation",
+      "keywords": [
+        "Domestic Systemically Important Bank",
+        "Domestic Systemically Important Banks",
+        "D-SIB",
+        "D-SIBs",
+        "Global Systemically Important Bank"
+      ],
+      "source": "added"
+    },
+    "Compromise Settlements & Write-offs": {
+      "group": "Prudential Regulation",
+      "keywords": [
+        "Compromise Settlement",
+        "Compromise Settlements",
+        "Technical Write-off",
+        "Technical Write-offs"
+      ],
+      "source": "added"
+    },
+    "Guarantees & Co-acceptances": {
+      "group": "Prudential Regulation",
+      "keywords": [
+        "Guarantees and Co-acceptances",
+        "Bank Guarantee",
+        "Bank Guarantees",
+        "Co-acceptance",
+        "Letter of Credit",
+        "Letters of Credit"
+      ],
+      "source": "added"
+    },
+    "Co-Lending": {
+      "group": "Retail Banking & Financial Inclusion",
+      "keywords": [
+        "Co-Lending",
+        "Co-lending Model",
+        "Co-Lending Arrangement"
+      ],
+      "source": "added"
+    },
+    "Microfinance Loans": {
+      "group": "Retail Banking & Financial Inclusion",
+      "keywords": [
+        "Microfinance Loan",
+        "Microfinance Loans",
+        "Micro Finance",
+        "Self-Regulatory Organisation for Microfinance"
+      ],
+      "source": "added"
+    },
+    "Gold Loans": {
+      "group": "Retail Banking & Financial Inclusion",
+      "keywords": [
+        "Gold Loan",
+        "Gold Loans",
+        "Loans against Gold Jewellery",
+        "Gold Monetisation",
+        "Sovereign Gold Bond"
+      ],
+      "source": "added"
+    },
+    "Export & Trade Finance": {
+      "group": "Treasury & Financial Markets",
+      "keywords": [
+        "Export Credit",
+        "Import Finance",
+        "Trade Finance",
+        "Merchanting Trade",
+        "Nostro",
+        "Rupee Vostro"
+      ],
+      "source": "added"
+    },
+    "Agricultural Credit": {
+      "group": "Retail Banking & Financial Inclusion",
+      "keywords": [
+        "Agricultural Credit",
+        "Crop Loan",
+        "Crop Loans",
+        "Agriculture Advances",
+        "Interest Subvention"
+      ],
+      "source": "added"
+    },
+    "Education Loans": {
+      "group": "Retail Banking & Financial Inclusion",
+      "keywords": [
+        "Education Loan",
+        "Education Loans",
+        "Model Education Loan Scheme"
+      ],
+      "source": "added"
+    },
+    "Financial Inclusion & Business Correspondents": {
+      "group": "Retail Banking & Financial Inclusion",
+      "keywords": [
+        "Financial Inclusion",
+        "Business Correspondent",
+        "Business Correspondents",
+        "Basic Savings Bank Deposit",
+        "BSBD"
+      ],
+      "source": "added"
+    },
+    "Deposit Accounts & Unclaimed Deposits": {
+      "group": "Retail Banking & Financial Inclusion",
+      "keywords": [
+        "Unclaimed Deposits",
+        "Depositor Education and Awareness",
+        "DEAF",
+        "Inoperative Accounts",
+        "Dormant Account",
+        "Nomination Facility",
+        "Deceased Depositor",
+        "Settlement of Claims"
+      ],
+      "source": "added"
+    },
+    "Safe Deposit Lockers": {
+      "group": "Retail Banking & Financial Inclusion",
+      "keywords": [
+        "Safe Deposit Locker",
+        "Safe Deposit Lockers",
+        "Locker Facility",
+        "Safe Custody"
+      ],
+      "source": "added"
+    },
+    "Deposit Insurance (DICGC)": {
+      "group": "Institution-Specific Administration",
+      "keywords": [
+        "Deposit Insurance",
+        "DICGC",
+        "Deposit Insurance and Credit Guarantee"
+      ],
+      "source": "added"
+    },
+    "Cheque Clearing & Positive Pay": {
+      "group": "Payments & Currency",
+      "keywords": [
+        "Cheque Truncation",
+        "Cheque Truncation System",
+        "CTS",
+        "Positive Pay",
+        "Positive Pay System"
+      ],
+      "source": "added"
+    },
+    "ATM Operations": {
+      "group": "Payments & Currency",
+      "keywords": [
+        "Automated Teller Machine",
+        "ATM Operations",
+        "Cash Recycler",
+        "ATM Transactions"
+      ],
+      "source": "added"
+    },
+    "Bharat Bill Payment System": {
+      "group": "Payments & Currency",
+      "keywords": [
+        "Bharat Bill Payment",
+        "BBPS",
+        "Bharat BillPay"
+      ],
+      "source": "added"
+    },
+    "Card Tokenisation & Networks": {
+      "group": "Payments & Currency",
+      "keywords": [
+        "Tokenisation",
+        "Card-on-File",
+        "Card Networks",
+        "Card Payment Network"
+      ],
+      "source": "added"
+    },
+    "Cross-Border Payments": {
+      "group": "Payments & Currency",
+      "keywords": [
+        "Cross-Border Payment",
+        "Cross-Border Payments",
+        "Cross Border Remittance",
+        "Liberalised Remittance Scheme",
+        "LRS"
+      ],
+      "source": "added"
+    },
+    "Government Business & Agency Banking": {
+      "group": "Institution-Specific Administration",
+      "keywords": [
+        "Government Business",
+        "Agency Bank",
+        "Agency Banks",
+        "Agency Commission",
+        "Ways and Means Advances"
+      ],
+      "source": "added"
+    },
+    "Government Securities": {
+      "group": "Treasury & Financial Markets",
+      "keywords": [
+        "Government Securities",
+        "G-Sec",
+        "Retail Direct",
+        "Subsidiary General Ledger",
+        "Treasury Bills",
+        "State Development Loans"
+      ],
+      "source": "added"
+    },
+    "Regulatory Reporting & Returns": {
+      "group": "Conduct, Compliance & Governance",
+      "keywords": [
+        "Regulatory Reporting",
+        "Returns",
+        "XBRL",
+        "Central Information Management System",
+        "CIMS",
+        "Automated Data Flow",
+        "CRILC"
+      ],
+      "source": "added"
+    },
+    "Supervisory Framework & Inspection": {
+      "group": "Conduct, Compliance & Governance",
+      "keywords": [
+        "Risk Based Supervision",
+        "Supervisory Framework",
+        "Annual Financial Inspection",
+        "Enforcement",
+        "Monetary Penalty",
+        "Penalties"
+      ],
+      "source": "added"
+    },
+    "Internal Audit & Assurance": {
+      "group": "Conduct, Compliance & Governance",
+      "keywords": [
+        "Internal Audit",
+        "Risk Based Internal Audit",
+        "RBIA",
+        "Concurrent Audit",
+        "Statutory Auditors",
+        "Appointment of Statutory Central Auditors",
+        "Legal Audit"
+      ],
+      "source": "added"
+    },
+    "Compensation & Remuneration": {
+      "group": "Conduct, Compliance & Governance",
+      "keywords": [
+        "Compensation of Whole Time Directors",
+        "Remuneration",
+        "Compensation Guidelines",
+        "Variable Pay"
+      ],
+      "source": "added"
+    },
+    "Related Party & Connected Lending": {
+      "group": "Conduct, Compliance & Governance",
+      "keywords": [
+        "Related Party Transactions",
+        "Connected Lending",
+        "Loans to Directors",
+        "Advances to Directors"
+      ],
+      "source": "added"
+    },
+    "Dividend Declaration": {
+      "group": "Institution-Specific Administration",
+      "keywords": [
+        "Declaration of Dividend",
+        "Dividend Declaration",
+        "Dividend Payout"
+      ],
+      "source": "added"
+    },
+    "Whistle Blower & Protected Disclosures": {
+      "group": "Conduct, Compliance & Governance",
+      "keywords": [
+        "Whistle Blower",
+        "Protected Disclosure",
+        "Protected Disclosures"
+      ],
+      "source": "added"
+    },
+    "Recovery Agents & Collections": {
+      "group": "Conduct, Compliance & Governance",
+      "keywords": [
+        "Recovery Agent",
+        "Recovery Agents",
+        "Engagement of Recovery Agents"
+      ],
+      "source": "added"
+    },
+    "Regulatory Sandbox & FinTech": {
+      "group": "Technology & Operational Resilience",
+      "keywords": [
+        "Regulatory Sandbox",
+        "FinTech",
+        "Innovation Hub",
+        "Self-Regulatory Organisation for FinTech"
+      ],
+      "source": "added"
+    },
+    "Account Aggregator Framework": {
+      "group": "Technology & Operational Resilience",
+      "keywords": [
+        "Account Aggregator",
+        "NBFC-AA",
+        "Consent Manager"
+      ],
+      "source": "added"
+    },
+    "Data Governance & Privacy": {
+      "group": "Technology & Operational Resilience",
+      "keywords": [
+        "Data Governance",
+        "Data Privacy",
+        "Storage of Payment System Data",
+        "Customer Consent",
+        "Data Retention"
+      ],
+      "source": "added"
+    },
+    "Legal Entity Identifier (LEI)": {
+      "group": "Conduct, Compliance & Governance",
+      "keywords": [
+        "Legal Entity Identifier",
+        "LEI"
+      ],
+      "source": "added"
+    }
+  },
+  "topic_to_business_area": {
+    "KYC / AML": "BA-01",
+    "Consumer Protection": "BA-02",
+    "Responsible Business Conduct": "BA-02",
+    "Digital Lending": "BA-04",
+    "Account Aggregator Framework": "BA-04",
+    "Credit Information Reporting": "BA-12",
+    "Fraud Risk Management": "BA-13",
+    "Wilful Defaulters": "BA-17",
+    "Recovery Agents & Collections": "BA-17",
+    "Internal Audit & Assurance": "BA-20",
+    "Credit Risk Management": "BA-21",
+    "Governance": "BA-21",
+    "Concentration Risk Management": "BA-22",
+    "Capital Market Exposure": "BA-22",
+    "Real Estate & Commercial Real Estate Exposure": "BA-23",
+    "Income Recognition, Asset Classification & Provisioning (IRACP)": "BA-23",
+    "Resolution of Stressed Assets": "BA-23",
+    "Compromise Settlements & Write-offs": "BA-23",
+    "Capital Adequacy": "BA-24",
+    "Resource Raising": "BA-24",
+    "Market Risk": "BA-25",
+    "Counterparty Credit Risk": "BA-25",
+    "Asset Liability Management (ALM)": "BA-26",
+    "Systemically Important Banks (D-SIB)": "BA-27",
+    "Prompt Corrective Action (PCA)": "BA-27",
+    "Financial Statements & Disclosures": "BA-29",
+    "Country Risk": "BA-30",
+    "Unhedged Foreign Currency Exposure": "BA-31",
+    "Legal Entity Identifier (LEI)": "BA-32",
+    "Securitisation": "BA-36",
+    "Transfer & Distribution of Credit Risk": "BA-36",
+    "Guarantees & Co-acceptances": "BA-19",
+    "Related Party & Connected Lending": "BA-19",
+    "Operational Risk": "BA-18",
+    "Operational Resilience": "BA-18",
+    "Cheque Clearing & Positive Pay": "BA-18",
+    "Safe Deposit Lockers": "BA-18",
+    "Regulatory Reporting & Returns": "BA-11",
+    "Supervisory Framework & Inspection": "BA-20"
+  }
+}

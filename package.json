@@ -1,0 +1,75 @@
+{
+  "name": "rbi-intel",
+  "version": "3.3.0",
+  "description": "RBI regulatory intelligence: scraping, revision tracking, relationship graph and MCP server. Maintained for Sber India.",
+  "main": "dist/index.js",
+  "directories": {
+    "test": "tests"
+  },
+  "scripts": {
+    "build": "tsc",
+    "init": "tsx src/cli/init.ts",
+    "init:built": "node dist/cli/init.js",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "sync": "tsx src/cli/sync.ts",
+    "sync:quick": "tsx src/cli/sync.ts --quick",
+    "sync:md": "tsx src/cli/sync.ts --md-only",
+    "doctor": "tsx src/cli/doctor.ts",
+    "test": "tsx --test tests/*.test.ts",
+    "inspect": "npx @modelcontextprotocol/inspector tsx src/index.ts",
+    "doctor:built": "node dist/cli/doctor.js",
+    "sync:built": "node dist/cli/sync.js",
+    "setup": "npm install && npm run build && npm run init && npm run doctor",
+    "test:py": "python tests/test_relations.py && python tests/test_taxonomy.py && python tests/test_compliance.py",
+    "test:all": "npm test && npm run test:py",
+    "dashboard": "streamlit run streamlit_app.py",
+    "chunk": "python rbi.py chunk --all-master-directions",
+    "extract": "python rbi.py extract",
+    "scaffold": "python rbi.py scaffold",
+    "enrich": "python rbi.py enrich",
+    "validate": "python rbi.py validate"
+  },
+  "keywords": [
+    "rbi",
+    "regulatory",
+    "india",
+    "sber",
+    "mcp",
+    "compliance"
+  ],
+  "author": "Sber India",
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.29.0",
+    "cheerio": "^1.2.0",
+    "p-limit": "^7.3.0",
+    "pdf-parse": "^2.4.5",
+    "playwright": "^1.62.1",
+    "turndown": "^7.2.4",
+    "zod": "^4.4.3"
+  },
+  "devDependencies": {
+    "@types/node": "^26.2.0",
+    "@types/turndown": "^5.0.6",
+    "tsx": "^4.22.4",
+    "typescript": "^5.9.3"
+  },
+  "type": "module",
+  "bin": {
+    "rbi-intel": "./dist/index.js"
+  },
+  "engines": {
+    "node": ">=22.5.0"
+  },
+  "files": [
+    "dist",
+    "seed",
+    "python",
+    "rbi.py",
+    "streamlit_app.py",
+    ".streamlit",
+    "branding",
+    "README.md"
+  ]
+}

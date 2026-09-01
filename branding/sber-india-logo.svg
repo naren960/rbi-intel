@@ -1,0 +1,22 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="520" height="120">
+  <!-- Sber India brand: Forest Green #1A991A (brandfetch.com/sberbank.ru) -->
+  <!-- Checkmark icon -->
+  <polyline
+    points="28,62 52,86 92,34"
+    fill="none"
+    stroke="#1A991A"
+    stroke-width="16"
+    stroke-linecap="round"
+    stroke-linejoin="round"
+  />
+  <!-- SBER INDIA wordmark -->
+  <text
+    x="118"
+    y="84"
+    font-family="'Arial Black', 'Helvetica Neue', Arial, sans-serif"
+    font-weight="900"
+    font-size="68"
+    fill="#1A991A"
+    letter-spacing="1"
+  >SBER INDIA</text>
+</svg>

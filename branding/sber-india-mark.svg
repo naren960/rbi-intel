@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 120" width="120" height="120">
+  <!-- Sber India brand mark: Forest Green #1A991A (brandfetch.com/sberbank.ru) -->
+  <circle cx="60" cy="60" r="52" fill="none" stroke="#1A991A" stroke-width="9"
+          stroke-linecap="round" stroke-dasharray="286 40" transform="rotate(-58 60 60)"/>
+  <polyline points="34,62 54,82 90,40" fill="none" stroke="#1A991A" stroke-width="13"
+            stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

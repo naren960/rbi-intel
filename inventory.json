@@ -1,0 +1,923 @@
+{
+  "meta": {
+    "tool": "rbi-intel",
+    "schema_version": "2.0",
+    "generated_on": "2026-08-20T10:57:38.540302+00:00",
+    "scope": "2 direction(s), 21 requirement(s)",
+    "regulatory_layer_provenance": "Paraphrased by a language model from clause text stored in the rbi-intel database. Verify against the official RBI source before relying on it.",
+    "internal_layer_provenance": "SEEDED PLACEHOLDER. 21 of 21 mapping/assessment blocks were drafted by a language model with no access to any real policy register, and are illustrative only. They must be replaced with actual policy, process and control artefacts before any compliance use.",
+    "classification_scheme": [
+      "Compliant",
+      "Partially Compliant",
+      "Gap",
+      "Not Applicable",
+      "To Be Confirmed"
+    ]
+  },
+  "directions": [
+    {
+      "id": "rbi:mc:12807",
+      "short": "Master Circular - Credit facilities to Scheduled Castes (SCs",
+      "title": "Master Circular - Credit facilities to Scheduled Castes (SCs) & Scheduled Tribes (STs)",
+      "reference": "FIDD.CO.GSSD.BC.No.02/09.09.001/2025-26",
+      "issued": "2025-04-01",
+      "last_updated": "2025-04-01",
+      "url": "https://www.rbi.org.in/Scripts/BS_ViewMasCirculardetails.aspx?id=12807",
+      "issuing_department": "Financial Inclusion and Development",
+      "statutory_basis": "",
+      "applies_to": "Financial Inclusion and Development",
+      "summary": "",
+      "branch_relevance_note": "",
+      "status": "active",
+      "source": "rbi"
+    },
+    {
+      "id": "rbi:mc:12806",
+      "short": "DAY-NRLM",
+      "title": "Master Circular – Deendayal Antyodaya Yojana - National Rural Livelihoods Mission (DAY-NRLM)",
+      "reference": "FIDD.GSSD.CO.BC.No.01/09.01.003/2025-26",
+      "issued": "2025-04-01",
+      "last_updated": "2025-04-01",
+      "url": "https://www.rbi.org.in/Scripts/BS_ViewMasCirculardetails.aspx?id=12806",
+      "issuing_department": "Financial Inclusion and Development",
+      "statutory_basis": "",
+      "applies_to": "Financial Inclusion and Development",
+      "summary": "",
+      "branch_relevance_note": "",
+      "status": "active",
+      "source": "rbi"
+    }
+  ],
+  "business_areas": [
+    {
+      "id": "BA-02",
+      "name": "Customer Acceptance & Onboarding",
+      "description": "Account opening decisions, acceptance criteria, rejection handling, financial inclusion."
+    },
+    {
+      "id": "BA-03",
+      "name": "Customer Identification & CDD",
+      "description": "Identification of individuals, proprietary firms and legal entities; document capture."
+    },
+    {
+      "id": "BA-18",
+      "name": "Branch Operations & Instrument Handling",
+      "description": "Cheque and forged instrument frauds, instrument validity, physical security incidents."
+    },
+    {
+      "id": "BA-19",
+      "name": "Credit Administration Controls",
+      "description": "Legal audit of title documents, transfer of accounts to ARCs, third-party accountability."
+    },
+    {
+      "id": "BA-21",
+      "name": "Credit Risk Governance & Policy",
+      "description": "Board-approved credit risk policy, credit risk management architecture, delegation of powers."
+    },
+    {
+      "id": "BA-23",
+      "name": "Credit Risk Evaluation & Appraisal",
+      "description": "Credit appraisal standards, internal rating, due diligence, sanction and review."
+    },
+    {
+      "id": "BA-99",
+      "name": "Unclassified — needs manual assignment",
+      "description": "Placeholder for requirements whose business area has not yet been reconciled."
+    }
+  ],
+  "owners": [
+    {
+      "id": "OWN-01",
+      "role": "Branch Manager",
+      "line": "First line"
+    },
+    {
+      "id": "OWN-02",
+      "role": "Branch Operations Manager",
+      "line": "First line"
+    },
+    {
+      "id": "OWN-03",
+      "role": "Branch Risk & Compliance Officer",
+      "line": "First line"
+    },
+    {
+      "id": "OWN-09",
+      "role": "Head — AML & KYC Cell",
+      "line": "Second line"
+    },
+    {
+      "id": "OWN-13",
+      "role": "Head — Digital Banking & Technology",
+      "line": "First line"
+    },
+    {
+      "id": "OWN-UNMAPPED",
+      "role": "UNMAPPED — needs manual assignment",
+      "line": "n/a"
+    }
+  ],
+  "requirements": [
+    {
+      "req_id": "rbi:mc:12806#ANXI-2.1",
+      "direction_id": "rbi:mc:12806",
+      "clause": "ANXI-2.1",
+      "chapter": "ANXI",
+      "clause_title": "SHG composition for special categories",
+      "business_area": "BA-02",
+      "requirement": "Self-Help Groups (SHGs) under DAY-NRLM are generally to be women-only. However, for groups comprising persons with disabilities, elders, or transgenders, both men and women may be included.",
+      "obligation_type": "Governance",
+      "branch_relevance": "Low",
+      "applicability": "DAY-NRLM",
+      "timeline": null,
+      "needs_manual_review": false,
+      "mapping": {
+        "policy": "DAY-NRLM Credit Linkage and SHG Financing Policy",
+        "process": "Self-Help Group (SHG) Membership Verification and Onboarding",
+        "control": "System validation checks on SHG member demographic profiles during account opening to ensure special category exceptions for mixed-gender groups are restricted to disabled, elderly, or transgender cohorts",
+        "control_type": "Preventive",
+        "owner_process": "OWN-02",
+        "owner_control": "OWN-09",
+        "evidence_required": "SHG resolution copies, member KYC records, and core banking system demographic tagging audit logs",
+        "provenance": "seeded"
+      },
+      "assessment": {
+        "classification": "Partially Compliant",
+        "finding": "Automated validation blocks mixed-gender SHG onboarding by default, but branch-level manual override exceptions for elderly and disabled groups lack secondary sign-offs.",
+        "recommendation": "Implement a mandatory workflow sign-off by the Branch Risk & Compliance Officer for any mixed-gender SHG exception override.",
+        "severity": "Medium"
+      },
+      "keywords": [
+        "composition",
+        "disabilities",
+        "elders",
+        "self-help groups",
+        "shg",
+        "transgenders",
+        "women"
+      ]
+    },
+    {
+      "req_id": "rbi:mc:12806#ANXI-2.2",
+      "direction_id": "rbi:mc:12806",
+      "clause": "ANXI-2.2",
+      "chapter": "ANXI",
+      "clause_title": "SHG membership criteria",
+      "business_area": "BA-02",
+      "requirement": "Self-Help Groups (SHGs) under the Deendayal Antyodaya Yojana - National Rural Livelihoods Mission (DAY-NRLM) should generally have 10 to 20 members. However, for special categories like groups in challenging locations, groups comprising disabled individuals, or those in remote tribal regions, a minimum of 5 members is permissible.",
+      "obligation_type": "Governance",
+      "branch_relevance": "Low",
+      "applicability": "Banks",
+      "timeline": null,
+      "needs_manual_review": false,
+      "mapping": {
+        "policy": "DAY-NRLM Credit Linkage and SHG Financing Policy",
+        "process": "Self-Help Group Membership Verification and Onboarding Process",
+        "control": "System validation checks on minimum and maximum member counts based on group category tagging",
+        "control_type": "Preventive",
+        "owner_process": "OWN-02",
+        "owner_control": "OWN-03",
+        "evidence_required": "SHG resolution, member KYC details, and exception approval logs for special category groups with under 10 members",
+        "provenance": "seeded"
+      },
+      "assessment": {
+        "classification": "Partially Compliant",
+        "finding": "Automated core banking system validations enforce a strict 10-member minimum for standard SHGs, but exception workflows for remote tribal or disabled groups rely on manual branch memos without centralized tracking.",
+        "recommendation": "Implement an automated workflow in the core banking system to capture and approve special category tags, ensuring audit trails are generated for groups with 5 to 9 members.",
+        "severity": "Medium"
+      },
+      "keywords": [
+        "day-nrlm",
+        "membership",
+        "minimum members",
+        "shg",
+        "special shgs"
+      ]
+    },
+    {
+      "req_id": "rbi:mc:12806#ANXI-2.3",
+      "direction_id": "rbi:mc:12806",
+      "clause": "ANXI-2.3",
+      "chapter": "ANXI",
+      "clause_title": "Revolving fund eligibility criteria",
+      "business_area": "BA-02",
+      "requirement": "Self-help groups (SHGs) that have existed for at least 3 to 6 months, adhere to the 'Panchasutras' (regular meetings, savings, internal lending, recoveries, and proper accounts), and have not previously received a revolving fund are eligible for corpus support between ₹20,000 and ₹30,000 to enhance their institutional and financial management capabilities and establish a credit history.",
+      "obligation_type": "Governance",
+      "branch_relevance": "Low",
+      "applicability": "SHGs",
+      "timeline": "minimum period of 3/6 months",
+      "needs_manual_review": false,
+      "mapping": {
+        "policy": "DAY-NRLM Credit Linkage and Corpus Support Policy",
+        "process": "Verification of SHG Panchasutras and Age Criteria for Revolving Fund Release",
+        "control": "Pre-disbursal checklist validation verifying minimum 3-6 months age and compliant Panchasutras via federation certification",
+        "control_type": "Preventive",
+        "owner_process": "OWN-02",
+        "owner_control": "OWN-03",
+        "evidence_required": "SHG meeting registers, resolution copies, federation recommendation letter, and savings account statements showing internal rotation",
+        "provenance": "seeded"
+      },
+      "assessment": {
+        "classification": "Partially Compliant",
+        "finding": "Standard operating procedures capture the 3-6 months age criterion and Panchasutras verification, but branch staff inconsistently archive the underlying federation certification for internal lending records.",
+        "recommendation": "Mandate the attachment of verified federation grading sheets into the core banking system DMS before revolving fund disbursement.",
+        "severity": "Medium"
+      },
+      "keywords": [
+        "corpus support",
+        "credit history",
+        "eligibility",
+        "panchasutras",
+        "revolving fund",
+        "shg"
+      ]
+    },
+    {
+      "req_id": "rbi:mc:12806#ANXII-7.1",
+      "direction_id": "rbi:mc:12806",
+      "clause": "ANXII-7.1",
+      "chapter": "ANXII",
+      "clause_title": "Opening accounts for SHGs and federations",
+      "business_area": "BA-03",
+      "requirement": "Banks must open savings and current accounts for Self-Help Groups (SHGs), including those with disabled members, and for SHG federations. For KYC verification of SHG members, banks must follow the Master Direction on KYC. PAN/Form 60 requirements for SHGs should be handled as per Section 33A(b) of the Master Direction on KYC. Business Correspondents can open SHG savings accounts if they follow BC guidelines and the bank's Board-approved policy. Opening a savings account for every member is not a requirement for credit linkage. Banks should maintain separate savings and loan accounts for SHGs. Savings accounts for SHG federations at various levels should be categorized as 'Association of persons' accounts, with applicable KYC norms for signatories. Current accounts should be opened for Producer Groups under DAY-NRLM at various levels, with applicable KYC norms for signatories.",
+      "obligation_type": "Process",
+      "branch_relevance": "High",
+      "applicability": "Banks, Business Correspondents",
+      "timeline": "As specified from time to time",
+      "needs_manual_review": false,
+      "mapping": {
+        "policy": "Customer Acceptance Policy and Operations Manual for Inclusive Banking",
+        "process": "SHG and Federation Account Opening and KYC Verification Process",
+        "control": "Mandatory checklist validation for SHG entity type, resolution, and signatory KYC before account activation in core banking system",
+        "control_type": "Preventive",
+        "owner_process": "OWN-02",
+        "owner_control": "OWN-03",
+        "evidence_required": "SHG resolution, KYC documents of office bearers, and system onboarding audit trail",
+        "provenance": "seeded"
+      },
+      "assessment": {
+        "classification": "Partially Compliant",
+        "finding": "Standard SHG account opening workflows exist, but exception handling for disabled members' alternate thumb impression/attestation protocols is inconsistently documented at rural branches.",
+        "recommendation": "Update the core onboarding checklist to explicitly detail alternate verification methods for disabled members in compliance with Master Direction on KYC.",
+        "severity": "Medium"
+      },
+      "keywords": [
+        "business correspondents",
+        "current account",
+        "day-nrlm",
+        "federation accounts",
+        "kyc",
+        "producer groups",
+        "savings account",
+        "shg accounts"
+      ]
+    },
+    {
+      "req_id": "rbi:mc:12806#ANXII-7.2",
+      "direction_id": "rbi:mc:12806",
+      "clause": "ANXII-7.2",
+      "chapter": "ANXII",
+      "clause_title": "Dual-authentication for SHG accounts",
+      "business_area": "BA-18",
+      "requirement": "Banks must implement a dual-authentication mechanism for transactions in savings/cash credit accounts of Self-Help Groups (SHGs) and their federations, whether conducted within the bank's network (ON-US) or outside (OFF-US). This facility should be available at retail outlets managed by Business Correspondents, enabling SHGs to conduct transactions in jointly operated accounts. Banks should also provide these services to SHGs and their federations through Business Correspondents, in line with their board-approved policies.",
+      "obligation_type": "Process",
+      "branch_relevance": "High",
+      "applicability": "Banks, SHGs, Federations of SHGs, Business Correspondents",
+      "timeline": null,
+      "needs_manual_review": false,
+      "mapping": {
+        "policy": "DAY-NRLM Banking Operations and Financial Inclusion Policy",
+        "process": "BC-assisted dual-authentication transaction processing for SHG accounts",
+        "control": "System-enforced biometric or two-factor authentication prompt for joint account holders at BC touchpoints",
+        "control_type": "Preventive",
+        "owner_process": "OWN-02",
+        "owner_control": "OWN-13",
+        "evidence_required": "Core banking transaction logs, BC terminal transaction slips showing dual authentication flags",
+        "provenance": "seeded"
+      },
+      "assessment": {
+        "classification": "Partially Compliant",
+        "finding": "Dual-authentication logic is active for ON-US micro-ATMs managed by Business Correspondents, but OFF-US transactions through interoperable micro-ATM switches currently bypass the secondary sign-off requirement for SHG cash credit accounts.",
+        "recommendation": "Update the switch routing rules immediately to enforce mandatory second-factor authentication for all SHG and federation transactions regardless of acquiring terminal network.",
+        "severity": "High"
+      },
+      "keywords": [
+        "business correspondent",
+        "cash credit account",
+        "dual-authentication",
+        "federation",
+        "retail outlet",
+        "savings account",
+        "shg"
+      ]
+    },
+    {
+      "req_id": "rbi:mc:12806#ANXII-7.3.1",
+      "direction_id": "rbi:mc:12806",
+      "clause": "ANXII-7.3.1",
+      "chapter": "ANXII",
+      "clause_title": "SHG loan eligibility criteria",
+      "business_area": "BA-23",
+      "requirement": "Self-Help Groups (SHGs) must be actively operating for a minimum of six months based on their financial records, not just the date their savings account was opened. They must adhere to the 'Panchasutras': regular meetings, savings, internal lending, prompt repayment, and maintaining up-to-date accounts. SHGs need to meet NABARD's grading standards, with federations potentially conducting this grading once formed. Previously inactive SHGs can be eligible for credit if they are revitalized and remain active for at least three months.",
+      "obligation_type": "Governance",
+      "branch_relevance": "High",
+      "applicability": "Self-Help Groups (SHGs)",
+      "timeline": "minimum of six months; minimum period of three months",
+      "needs_manual_review": false,
+      "mapping": {
+        "policy": "Microfinance and Financial Inclusion Credit Policy",
+        "process": "Self-Help Group (SHG) Credit Appraisal and Eligibility Verification",
+        "control": "Pre-sanction verification checklist confirming active operation for at least six months and compliance with Panchasutras through meeting register inspection",
+        "control_type": "Preventive",
+        "owner_process": "OWN-02",
+        "owner_control": "OWN-03",
+        "evidence_required": "SHG meeting minutes, savings passbooks, internal lending registers, and NABARD grading report",
+        "provenance": "seeded"
+      },
+      "assessment": {
+        "classification": "Partially Compliant",
+        "finding": "Branch credit files consistently capture the account opening date to verify the six-month vintage, but meeting minutes and internal lending registers are not systematically audited to confirm active Panchasutras compliance.",
+        "recommendation": "Update the SHG pre-sanction checklist to mandate physical verification of meeting registers and internal lending records by the Branch Risk Officer prior to loan disbursement.",
+        "severity": "Medium"
+      },
+      "keywords": [
+        "active existence",
+        "eligibility",
+        "grading",
+        "panchasutras",
+        "revived",
+        "shg"
+      ]
+    },
+    {
+      "req_id": "rbi:mc:12806#ANXII-7.3.2",
+      "direction_id": "rbi:mc:12806",
+      "clause": "ANXII-7.3.2",
+      "chapter": "ANXII",
+      "clause_title": "Loan application forms for SHGs",
+      "business_area": "BA-23",
+      "requirement": "Banks should use the Common Loan Application Forms created by the Indian Bank’s Association (IBA) when providing credit to Self-Help Groups (SHGs). Additionally, banks are encouraged to facilitate SHGs in submitting loan applications via online systems provided by DAY-NRLM and the National Portal for Credit Linked Schemes.",
+      "obligation_type": "Process",
+      "branch_relevance": "High",
+      "applicability": "All banks",
+      "timeline": null,
+      "needs_manual_review": false,
+      "mapping": {
+        "policy": "Retail and Rural Lending Policy",
+        "process": "SHG Credit Application Intake and Verification",
+        "control": "Mandatory usage check of IBA Common Loan Application Form and DAY-NRLM portal submission status prior to credit underwriting",
+        "control_type": "Preventive",
+        "owner_process": "OWN-02",
+        "owner_control": "OWN-03",
+        "evidence_required": "Completed IBA Common Loan Application Form in loan file and digital submission acknowledgement receipt from the DAY-NRLM portal",
+        "provenance": "seeded"
+      },
+      "assessment": {
+        "classification": "Partially Compliant",
+        "finding": "Branches correctly utilize the IBA Common Loan Application Form for physical submissions, but tracking logs show digital applications via the DAY-NRLM portal are frequently bypassed or updated post-sanction due to interface lag.",
+        "recommendation": "Institute a pre-sanction system validation check requiring the DAY-NRLM portal acknowledgement number to be logged in the Core Banking System before loan origination can proceed.",
+        "severity": "Medium"
+      },
+      "keywords": [
+        "credit facility",
+        "day-nrlm",
+        "iba form",
+        "loan application",
+        "online application",
+        "shg"
+      ]
+    },
+    {
+      "req_id": "rbi:mc:12806#ANXII-7.3.3",
+      "direction_id": "rbi:mc:12806",
+      "clause": "ANXII-7.3.3",
+      "chapter": "ANXII",
+      "clause_title": "SHG loan amounts and drawing power",
+      "business_area": "BA-19",
+      "requirement": "Banks should provide multiple credit doses to Self-Help Groups (SHGs) over time, allowing them to access larger loan amounts. SHGs can choose between Term Loans (TL) or Cash Credit Limits (CCL), or both. For CCLs, banks should offer a minimum of ₹6 lakh for 3 years, with annual drawing power (DP) reviews. DP calculations are specified for each year, considering the SHG's corpus and repayment behavior. For TLs, loans should be disbursed in doses, with specific amounts and conditions for the first three doses, based on the SHG's corpus, repayment history, and Micro Credit Plan (MCP).",
+      "obligation_type": "Process",
+      "branch_relevance": "High",
+      "applicability": "Banks",
+      "timeline": "3 years for CCL minimum loan period; annual review for DP enhancement",
+      "needs_manual_review": false,
+      "mapping": {
+        "policy": "Policy on Financing of Self-Help Groups under DAY-NRLM",
+        "process": "Annual Drawing Power Review and Credit Dosing for SHG Portfolios",
+        "control": "System-enforced annual review of drawing power for SHG cash credit limits based on corpus and repayment history",
+        "control_type": "Preventive",
+        "owner_process": "OWN-02",
+        "owner_control": "OWN-03",
+        "evidence_required": "Annual SHG credit appraisal notes, MCP validation sheets, and CBS drawing power recalculation logs",
+        "provenance": "seeded"
+      },
+      "assessment": {
+        "classification": "Partially Compliant",
+        "finding": "Automated system rules recalculate drawing power annually for standard accounts, but manual overrides are applied by branch staff for overdue SHGs without requisite regional committee approvals.",
+        "recommendation": "Restrict system override permissions for drawing power enhancements to regional risk authorities and implement a mandatory audit trail for manual adjustments.",
+        "severity": "Medium"
+      },
+      "keywords": [
+        "cash credit",
+        "corpus",
+        "credit",
+        "drawing power",
+        "loan",
+        "micro credit plan",
+        "shg",
+        "term loan"
+      ]
+    },
+    {
+      "req_id": "rbi:mc:12806#ANXII-4",
+      "direction_id": "rbi:mc:12806",
+      "clause": "ANXII-4",
+      "chapter": "ANXII",
+      "clause_title": "Repeat loans for eligible SHGs",
+      "business_area": "BA-23",
+      "requirement": "Banks should implement measures to ensure that eligible Self-Help Groups (SHGs) receive subsequent loans.",
+      "obligation_type": "Process",
+      "branch_relevance": "High",
+      "applicability": "Banks",
+      "timeline": null,
+      "needs_manual_review": false,
+      "mapping": {
+        "policy": "Policy on Financing of Self-Help Groups (SHGs) under DAY-NRLM",
+        "process": "Repeat Loan Appraisal and Renewal Process for Eligible SHGs",
+        "control": "Automated pipeline flagging and tracker for SHG credit renewals upon successful repayment of prior credit cycle",
+        "control_type": "Preventive",
+        "owner_process": "OWN-02",
+        "owner_control": "OWN-03",
+        "evidence_required": "SHG credit renewal tracking register, loan appraisal notes, and core banking system pipeline reports",
+        "provenance": "seeded"
+      },
+      "assessment": {
+        "classification": "Partially Compliant",
+        "finding": "The core banking system successfully flags accounts eligible for repeat loans based on repayment history, but branch loan officers frequently experience delays in initiating timely appraisal memos due to lack of automated workflow triggers.",
+        "recommendation": "Implement automated SMS and system task alerts for loan officers sixty days prior to the expected repeat loan window to ensure timely appraisal and disbursement.",
+        "severity": "Medium"
+      },
+      "keywords": [
+        "eligible groups",
+        "loan provision",
+        "repeat loans",
+        "shg",
+        "subsequent loans"
+      ]
+    },
+    {
+      "req_id": "rbi:mc:12806#ANXII-7.3.4",
+      "direction_id": "rbi:mc:12806",
+      "clause": "ANXII-7.3.4",
+      "chapter": "ANXII",
+      "clause_title": "Loans to SHG members and producer groups",
+      "business_area": "BA-23",
+      "requirement": "Banks can offer loans up to ₹10 lakh to individual members of mature, well-performing Self-Help Groups (SHGs) that are at least two years old and have a history of timely loan repayment, provided the individual runs a viable business. Banks should also share data on these individual loans with DAY-NRLM periodically. Additionally, one woman per SHG under DAY-NRLM can receive up to ₹1 lakh under the MUDRA Scheme if eligible. Banks must offer a minimum overdraft (OD) facility of ₹5000 to every woman SHG member with a PMJDY account, following IBA guidelines, and share OD limit data with DAY-NRLM. Loans can also be extended to well-performing Producer Groups/Organisations under DAY-NRLM for commercial activities.",
+      "obligation_type": "Governance",
+      "branch_relevance": "High",
+      "applicability": "Banks",
+      "timeline": "SHGs which are more than 2 years old and have accessed at least one dose of bank loan with timely repayment",
+      "needs_manual_review": false,
+      "mapping": {
+        "policy": "Policy on Financing Self-Help Groups (SHGs) and Joint Liability Groups (JLGs)",
+        "process": "Appraisal and disbursement of individual member loans and overdraft facilities under DAY-NRLM",
+        "control": "Automated system validation checking SHG vintage (>2 years), prior repayment track record, and capping individual loans at Rs 10 lakh",
+        "control_type": "Preventive",
+        "owner_process": "OWN-01",
+        "owner_control": "OWN-02",
+        "evidence_required": "SHG resolution papers, credit bureau reports, loan origination system checklist logs, and periodic data submission extracts shared with DAY-NRLM portal",
+        "provenance": "seeded"
+      },
+      "assessment": {
+        "classification": "Partially Compliant",
+        "finding": "The core credit underwriting system successfully validates SHG vintage and repayment history at the group level, but periodic data sharing on individual loans and PMJDY overdraft limits with the DAY-NRLM portal is currently done via manual file uploads rather than automated API integration.",
+        "recommendation": "Develop an automated bulk reporting script to feed individual loan and overdraft data directly to the DAY-NRLM portal to ensure timely submission and eliminate manual reconciliation errors.",
+        "severity": "Medium"
+      },
+      "keywords": [
+        "day-nrlm data sharing",
+        "mudra",
+        "pmjdy od",
+        "producer groups",
+        "shg loans",
+        "women entrepreneurs"
+      ]
+    },
+    {
+      "req_id": "rbi:mc:12806#ANXII-7.3.5",
+      "direction_id": "rbi:mc:12806",
+      "clause": "ANXII-7.3.5",
+      "chapter": "ANXII",
+      "clause_title": "Loan purpose and repayment guidelines",
+      "business_area": "BA-19",
+      "requirement": "Loans distributed by Self-Help Groups (SHGs) must align with their Micro-Credit Plans (MCPs). Members can use these loans for social needs, debt swapping, housing, sanitation, sustainable livelihoods, or viable group activities. Specifically, for loans exceeding ₹1 lakh, at least 50% must be for income generation; for loans over ₹4 lakh, at least 75% must be for income generation; and for loans above ₹6 lakh, at least 85% must be for income generation. The SHG's MCP will dictate the loan's purpose and use.",
+      "obligation_type": "Governance",
+      "branch_relevance": "Low",
+      "applicability": "Self-Help Groups (SHGs)",
+      "timeline": null,
+      "needs_manual_review": false,
+      "mapping": {
+        "policy": "DAY-NRLM Credit and Micro-Credit Plan Policy",
+        "process": "SHG Loan Application Appraisal and Purpose Verification",
+        "control": "Tiered Income Generation Purpose Validation Rule in LOS",
+        "control_type": "Preventive",
+        "owner_process": "OWN-02",
+        "owner_control": "OWN-UNMAPPED",
+        "evidence_required": "Micro-Credit Plan document, loan utilization report, and pre-sanction field visit report",
+        "provenance": "seeded"
+      },
+      "assessment": {
+        "classification": "Partially Compliant",
+        "finding": "The Loan Origination System validates purpose thresholds for primary SHG credit lines, but branch officers occasionally override the income generation percentage requirement for loans exceeding four lakh rupees without documented justification in the credit notes.",
+        "recommendation": "Implement a hard system block in the credit workflow for loan applications exceeding four lakh and six lakh rupees that prevents sanctioning unless the micro-credit plan explicitly satisfies the 75 percent and 85 percent income generation thresholds respectively.",
+        "severity": "Medium"
+      },
+      "keywords": [
+        "income generation",
+        "loan purpose",
+        "micro-credit plan",
+        "productive purposes",
+        "repayment schedule",
+        "shg"
+      ]
+    },
+    {
+      "req_id": "rbi:mc:12806#ANXII-1",
+      "direction_id": "rbi:mc:12806",
+      "clause": "ANXII-1",
+      "chapter": "ANXII",
+      "clause_title": "Loan repayment period",
+      "business_area": "BA-19",
+      "requirement": "The initial disbursement of a loan must be repaid within a period of 24 to 36 months, with payments made either monthly or quarterly.",
+      "obligation_type": "Governance",
+      "branch_relevance": "High",
+      "applicability": "banks",
+      "timeline": "24-36 months",
+      "needs_manual_review": false,
+      "mapping": {
+        "policy": "DAY-NRLM Microfinance Credit Policy",
+        "process": "SHG Loan Repayment Schedule Configuration and Monitoring",
+        "control": "Core banking system automated validation preventing repayment schedules outside the 24 to 36-month tenure limit at loan origination",
+        "control_type": "Preventive",
+        "owner_process": "OWN-02",
+        "owner_control": "OWN-03",
+        "evidence_required": "Loan sanction tickets, CBS parameterisation logs, and sample repayment schedules generated for Self-Help Group loans",
+        "provenance": "seeded"
+      },
+      "assessment": {
+        "classification": "Partially Compliant",
+        "finding": "Automated validation enforces the 24 to 36-month repayment window for fresh loan originations, but legacy restructured loan portfolios occasionally retain non-compliant tenure extensions beyond the upper limit.",
+        "recommendation": "Perform a portfolio sweep to identify restructured SHG loans exceeding 36 months and institute a manual override review queue for any future tenure modifications.",
+        "severity": "Medium"
+      },
+      "keywords": [
+        "disbursement",
+        "instalments",
+        "loan repayment",
+        "monthly",
+        "quarterly"
+      ]
+    },
+    {
+      "req_id": "rbi:mc:12806#ANXII-2",
+      "direction_id": "rbi:mc:12806",
+      "clause": "ANXII-2",
+      "chapter": "ANXII",
+      "clause_title": "Loan repayment period",
+      "business_area": "BA-19",
+      "requirement": "The second disbursement of a loan can be repaid over a period of 36 to 48 months, with payments made either monthly or quarterly.",
+      "obligation_type": "Process",
+      "branch_relevance": "High",
+      "applicability": "banks",
+      "timeline": "36-48 months",
+      "needs_manual_review": false,
+      "mapping": {
+        "policy": "DAY-NRLM Microfinance Lending and Repayment Policy",
+        "process": "Second tranche loan repayment schedule configuration and monitoring",
+        "control": "System validation ensuring loan management system configures second disbursement tenors strictly between 36 and 48 months",
+        "control_type": "Preventive",
+        "owner_process": "OWN-02",
+        "owner_control": "OWN-UNMAPPED",
+        "evidence_required": "Loan origination system parameter configurations and sample disbursement schedule reports",
+        "provenance": "seeded"
+      },
+      "assessment": {
+        "classification": "Partially Compliant",
+        "finding": "Automated rules correctly enforce the 36-to-48 month tenor band for newly originated loans, but legacy schedules migrated from rural branches permit manual override without secondary sign-off.",
+        "recommendation": "Implement a mandatory dual-authorization workflow in the core banking system for any loan schedule modification falling outside standard parametric limits.",
+        "severity": "Medium"
+      },
+      "keywords": [
+        "instalments",
+        "loan repayment",
+        "monthly",
+        "quarterly",
+        "second dose"
+      ]
+    },
+    {
+      "req_id": "rbi:mc:12806#ANXII-3",
+      "direction_id": "rbi:mc:12806",
+      "clause": "ANXII-3",
+      "chapter": "ANXII",
+      "clause_title": "Loan repayment period",
+      "business_area": "BA-19",
+      "requirement": "The third installment of a loan can be repaid over a period of 48 to 60 months, with payments structured on a monthly or quarterly basis, depending on the borrower's cash flow.",
+      "obligation_type": "Process",
+      "branch_relevance": "High",
+      "applicability": "Banks",
+      "timeline": "48-60 months",
+      "needs_manual_review": false,
+      "mapping": {
+        "policy": "Retail and Microfinance Lending Policy",
+        "process": "DAY-NRLM Loan Repayment Scheduling and Structuring",
+        "control": "Core banking system repayment schedule validation checking tenure limits for third installment loans against cash flow assessments",
+        "control_type": "Preventive",
+        "owner_process": "OWN-02",
+        "owner_control": "OWN-UNMAPPED",
+        "evidence_required": "CBS loan account master configuration logs and cash flow assessment sheets signed by credit officers",
+        "provenance": "seeded"
+      },
+      "assessment": {
+        "classification": "Partially Compliant",
+        "finding": "The core banking system successfully enforces the 48-60 month tenure parameter for newly originated DAY-NRLM third installment loans, but restructuring workflows occasionally bypass cash flow verification steps for quarterly payment frequencies.",
+        "recommendation": "Update the loan origination system workflow to make cash flow documentation mandatory before selecting quarterly payment structures for extended tenures.",
+        "severity": "Medium"
+      },
+      "keywords": [
+        "cash flow",
+        "instalments",
+        "loan repayment",
+        "monthly",
+        "quarterly",
+        "third dose"
+      ]
+    },
+    {
+      "req_id": "rbi:mc:12806#ANXII-4-r2",
+      "direction_id": "rbi:mc:12806",
+      "clause": "ANXII-4-r2",
+      "chapter": "ANXII",
+      "clause_title": "Asset classification for DAY-NRLM loans",
+      "business_area": "BA-19",
+      "requirement": "All credit facilities provided under the Deendayal Antyodaya Yojana - National Rural Livelihoods Mission (DAY-NRLM) must follow the asset classification rules established by the Reserve Bank of India, which are updated periodically.",
+      "obligation_type": "Governance",
+      "branch_relevance": "High",
+      "applicability": "Banks",
+      "timeline": "from time to time",
+      "needs_manual_review": false,
+      "mapping": {
+        "policy": "Retail and Priority Sector Asset Classification Policy",
+        "process": "DAY-NRLM Portfolio NPA Marking and Delinquency Tracking",
+        "control": "Automated Core Banking System (CBS) flagging for DAY-NRLM asset classification aligned with IRAC norms",
+        "control_type": "Preventive",
+        "owner_process": "OWN-02",
+        "owner_control": "OWN-UNMAPPED",
+        "evidence_required": "CBS asset classification logs, DAY-NRLM portfolio health reports, and exception handling registers",
+        "provenance": "seeded"
+      },
+      "assessment": {
+        "classification": "Partially Compliant",
+        "finding": "Automated CBS flagging correctly applies standard IRAC norms to DAY-NRLM accounts, but manual overrides applied by branches during seasonal livelihood income cycles lack adequate secondary sign-offs.",
+        "recommendation": "Introduce a mandatory dual-authorization workflow in the CBS for any manual asset classification overrides on DAY-NRLM accounts to prevent unverified standardizations.",
+        "severity": "Medium"
+      },
+      "keywords": [
+        "asset classification",
+        "day-nrlm",
+        "loan norms",
+        "rbi guidelines"
+      ]
+    },
+    {
+      "req_id": "rbi:mc:12806#ANXII-7.3.6",
+      "direction_id": "rbi:mc:12806",
+      "clause": "ANXII-7.3.6",
+      "chapter": "ANXII",
+      "clause_title": "SHG loan collateral and margin rules",
+      "business_area": "BA-21",
+      "requirement": "For loans to Self-Help Groups (SHGs) up to ₹10 lakh, banks must not take any collateral or margin. They should also refrain from marking a lien on SHG savings accounts or demanding deposits during loan sanction. For loans between ₹10 lakh and ₹20 lakh, banks should not take collateral or mark liens on SHG savings accounts, but the loan can be covered by the Credit Guarantee Fund for Micro Units (CGFMU). Additionally, for loans above ₹10 lakh up to ₹20 lakh, a margin of up to 10% of the amount exceeding ₹10 lakh may be taken, subject to the bank's approved loan policy.",
+      "obligation_type": "Governance",
+      "branch_relevance": "High",
+      "applicability": "Banks lending to Self-Help Groups (SHGs)",
+      "timeline": null,
+      "needs_manual_review": false,
+      "mapping": {
+        "policy": "Retail and Priority Sector Lending Policy",
+        "process": "SHG Loan Sanction and Documentation Verification",
+        "control": "Core Banking System validation rules restricting collateral capture and margin calculation on SHG exposures up to INR 20 lakh",
+        "control_type": "Preventive",
+        "owner_process": "OWN-01",
+        "owner_control": "OWN-02",
+        "evidence_required": "Sanction tickets, loan agreement copies, and CBS collateral field audit logs",
+        "provenance": "seeded"
+      },
+      "assessment": {
+        "classification": "Partially Compliant",
+        "finding": "CBS logic successfully prevents collateral capture for loans up to INR 10 lakh, but manual overrides by loan officers occasionally allow inappropriate lien marking on savings accounts for loans between INR 10 lakh and INR 20 lakh.",
+        "recommendation": "Implement an automated system block on SHG savings accounts to restrict manual lien creation and update the credit underwriting workflow to enforce CGFMU cover for loans exceeding INR 10 lakh.",
+        "severity": "Medium"
+      },
+      "keywords": [
+        "cgfmu",
+        "collateral",
+        "loan policy",
+        "margin",
+        "savings bank lien",
+        "shg loans"
+      ]
+    },
+    {
+      "req_id": "rbi:mc:12806#ANXII-7.3.7",
+      "direction_id": "rbi:mc:12806",
+      "clause": "ANXII-7.3.7",
+      "chapter": "ANXII",
+      "clause_title": "Financing willful and non-willful defaulters",
+      "business_area": "BA-02",
+      "requirement": "Banks must not provide financing to willful defaulters under DAY-NRLM. If a willful defaulter is part of a group, they can still benefit from the group's savings and credit activities, including any funds built with Revolving Fund assistance. However, when providing loans to the group, these willful defaulters must be excluded from the credit facility, and this exclusion should be documented. Banks should not refuse loans to Self-Help Groups (SHGs) simply because individual members have family who are defaulters. Additionally, non-willful defaulters should not be prevented from getting loans. If a default occurred for valid reasons, banks can apply the guidelines for restructuring credit facilities.",
+      "obligation_type": "Screening",
+      "branch_relevance": "High",
+      "applicability": "Banks, DAY-NRLM",
+      "timeline": null,
+      "needs_manual_review": false,
+      "mapping": {
+        "policy": "DAY-NRLM Credit Policy",
+        "process": "SHG Loan Application Screening and Group Member Filtering",
+        "control": "Systemic exclusion and manual verification of willful defaulters from group credit limits",
+        "control_type": "Preventive",
+        "owner_process": "OWN-02",
+        "owner_control": "OWN-03",
+        "evidence_required": "SHG loan application forms, CIBIL/Wilful Defaulter list check reports, and minutes of group meetings documenting the exclusion of specific members",
+        "provenance": "seeded"
+      },
+      "assessment": {
+        "classification": "Partially Compliant",
+        "finding": "Wilful defaulter screening is performed at the group level during onboarding, but individual member exclusion from loan tranches lacks a systemic tracking flag, relying instead on manual branch officer checklists.",
+        "recommendation": "Incorporate a validation rule in the core banking system to flag individual SHG members identified as wilful defaulters, ensuring they are automatically excluded from loan disbursement schedules.",
+        "severity": "Medium"
+      },
+      "keywords": [
+        "day-nrlm",
+        "group financing",
+        "non-willful defaulters",
+        "restructuring loans",
+        "shg financing",
+        "willful defaulters"
+      ]
+    },
+    {
+      "req_id": "rbi:mc:12806#ANXII-7.3.8",
+      "direction_id": "rbi:mc:12806",
+      "clause": "ANXII-7.3.8",
+      "chapter": "ANXII",
+      "clause_title": "Update SHG passbooks and explain loan terms",
+      "business_area": "BA-18",
+      "requirement": "Banks should provide Self-Help Groups (SHGs) with loan passbooks or statements in regional languages, detailing loan information and terms. These passbooks must be updated after every transaction. Additionally, banks should explain the loan terms and conditions to SHGs during documentation and disbursement as part of financial literacy efforts.",
+      "obligation_type": "Process",
+      "branch_relevance": "High",
+      "applicability": "Banks",
+      "timeline": "updated with every transaction",
+      "needs_manual_review": false,
+      "mapping": {
+        "policy": "Financial Inclusion and DAY-NRLM Operational Policy",
+        "process": "SHG Credit Disbursement and Passbook Updation Process",
+        "control": "System-enforced passbook printing prompt at the teller counter upon transaction posting",
+        "control_type": "Preventive",
+        "owner_process": "OWN-02",
+        "owner_control": "OWN-02",
+        "evidence_required": "Physical or digital log of regional language passbook entries and signed financial literacy acknowledgement forms",
+        "provenance": "seeded"
+      },
+      "assessment": {
+        "classification": "Partially Compliant",
+        "finding": "Passbooks are updated promptly during cash deposits and withdrawals, but loan terms explanation sessions during disbursement are inconsistently documented in regional languages.",
+        "recommendation": "Mandate the upload of a signed vernacular loan terms disclosure checklist into the core banking system before loan disbursement authorization.",
+        "severity": "Medium"
+      },
+      "keywords": [
+        "financial literacy",
+        "loan details",
+        "passbook",
+        "regional languages",
+        "shg",
+        "statement of accounts",
+        "terms and conditions",
+        "transaction update"
+      ]
+    },
+    {
+      "req_id": "rbi:mc:12807#1.1",
+      "direction_id": "rbi:mc:12807",
+      "clause": "1.1",
+      "chapter": null,
+      "clause_title": "District Credit Plans Linkage",
+      "business_area": "BA-99",
+      "requirement": "Lead Banks must ensure that district credit plans formulated under the Lead Bank Scheme explicitly connect credit provisions to employment and development schemes. The District Level Consultative Committees should remain the primary forum for coordination between banks and development agencies.",
+      "obligation_type": "Governance",
+      "branch_relevance": "Medium",
+      "applicability": "Lead Banks",
+      "timeline": null,
+      "needs_manual_review": false,
+      "mapping": {
+        "policy": "Priority Sector Lending and Financial Inclusion Policy",
+        "process": "District Credit Plan formulation and coordination with District Consultative Committees",
+        "control": "Periodic reconciliation of branch credit targets with Lead District Manager credit plans and DCC meeting minutes review",
+        "control_type": "Detective",
+        "owner_process": "OWN-01",
+        "owner_control": "OWN-03",
+        "evidence_required": "District Consultative Committee meeting minutes, Lead Bank credit plan allocation sheets, and branch achievement reports",
+        "provenance": "seeded"
+      },
+      "assessment": {
+        "classification": "Partially Compliant",
+        "finding": "Branch credit targets are aligned with overall priority sector goals, but formal tracking against District Credit Plan employment schemes for Scheduled Castes and Scheduled Tribes lacks systematic documentation.",
+        "recommendation": "Institute a monthly branch review of credit disbursement under specific developmental schemes for SC/ST communities to ensure seamless alignment with Lead District Manager directives.",
+        "severity": "Medium"
+      },
+      "keywords": [
+        "coordination",
+        "development agencies",
+        "district credit plans",
+        "employment linkage",
+        "lead bank scheme"
+      ]
+    },
+    {
+      "req_id": "rbi:mc:12807#1.3",
+      "direction_id": "rbi:mc:12807",
+      "clause": "1.3",
+      "chapter": null,
+      "clause_title": "Credit planning for SCs/STs",
+      "business_area": "BA-23",
+      "requirement": "Banks must incorporate a weighting for Scheduled Castes (SCs) and Scheduled Tribes (STs) in their credit planning process. This involves developing special loan schemes tailored to their needs to encourage self-employment and increase credit flow to these communities. Loan applications from SCs/STs should be handled with significant sympathy and understanding.",
+      "obligation_type": "Process",
+      "branch_relevance": "High",
+      "applicability": "Banks",
+      "timeline": null,
+      "needs_manual_review": false,
+      "mapping": {
+        "policy": "Priority Sector Lending & Weaker Sections Credit Policy",
+        "process": "Credit Planning and Special Scheme Origination for SC/ST Borrowers",
+        "control": "Monthly review of SC/ST credit flow targets and special scheme application disposal rates by the branch credit committee",
+        "control_type": "Detective",
+        "owner_process": "OWN-01",
+        "owner_control": "OWN-03",
+        "evidence_required": "Branch credit plan, monthly target vs achievement tracking sheets, and rejected loan application registers with recorded sympathetic review notes",
+        "provenance": "seeded"
+      },
+      "assessment": {
+        "classification": "Partially Compliant",
+        "finding": "Special loan schemes for SC/ST self-employment are actively marketed, but branch tracking captures overall priority sector numbers rather than distinct SC/ST demographic breakdowns in credit planning reviews.",
+        "recommendation": "Update the branch credit monitoring dashboard to explicitly disaggregate weaker section data by SC/ST categories and institute mandatory second-tier review for all rejected SC/ST applications.",
+        "severity": "Medium"
+      },
+      "keywords": [
+        "credit planning",
+        "loan proposals",
+        "scs",
+        "special schemes",
+        "sts",
+        "sympathy"
+      ]
+    },
+    {
+      "req_id": "rbi:mc:12807#1.4",
+      "direction_id": "rbi:mc:12807",
+      "clause": "1.4",
+      "chapter": null,
+      "clause_title": "Review lending procedures and policies",
+      "business_area": "BA-23",
+      "requirement": "Banks must regularly assess their loan sanctioning procedures and policies to ensure loans are provided promptly, are sufficient for the intended purpose, promote productivity, and generate enough income to cover their costs.",
+      "obligation_type": "Governance",
+      "branch_relevance": "Medium",
+      "applicability": "Banks",
+      "timeline": "periodically",
+      "needs_manual_review": false,
+      "mapping": {
+        "policy": "Priority Sector Lending & Specialized Segment Credit Policy",
+        "process": "Periodic review of loan sanctioning and appraisal turnaround times for SC/ST borrower categories",
+        "control": "Quarterly sampling of rejected and delayed priority sector applications by the branch risk function",
+        "control_type": "Detective",
+        "owner_process": "OWN-02",
+        "owner_control": "OWN-03",
+        "evidence_required": "Quarterly review reports, sample appraisal files, and turnaround time tracking logs",
+        "provenance": "seeded"
+      },
+      "assessment": {
+        "classification": "Partially Compliant",
+        "finding": "Branch-level appraisal turnaround times are tracked for general priority sector loans, but specific tracking for SC/ST categorised applications lacks disaggregated root-cause analysis for processing delays.",
+        "recommendation": "Update the core banking loan management workflow to tag and separately report lending timelines for SC/ST applicants, ensuring timely identification of bottlenecks.",
+        "severity": "Medium"
+      },
+      "keywords": [
+        "adequacy",
+        "income generation",
+        "lending procedures",
+        "loan policies",
+        "review",
+        "sanctioning",
+        "self-liquidating",
+        "timeliness"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+# Analysis layer.
+#
+# The core path — chunking, relation extraction, the graph, validation and
+# export — needs nothing beyond the standard library. That is deliberate:
+# regex-first extraction runs offline, costs nothing, and is auditable.
+#
+# Everything below is optional, and each line says what stops working without it.
+
+pdfplumber>=0.11.0      # `ingest` for PDFs — handles Basel capital tables far
+                        #   better than pdf-parse. Not needed for .txt/.docx.
+python-docx>=1.1.0      # `ingest` for .docx
+streamlit>=1.37.0       # the dashboard
+pandas>=2.0.0           # the dashboard's tables
+
+# LLM providers — needed only for `extract` and `scaffold`, and only for the
+# provider you actually use. `--provider stub` needs neither.
+google-genai>=0.3.0     # RBI_INTEL_LLM=gemini   (free tier, no card)
+anthropic>=0.40.0       # RBI_INTEL_LLM=anthropic

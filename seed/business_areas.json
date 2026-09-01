@@ -1,0 +1,187 @@
+[
+  {
+    "id": "BA-01",
+    "name": "KYC Governance & Policy",
+    "description": "Board-approved KYC policy, ML/TF risk assessment, designated officers, KYC audit."
+  },
+  {
+    "id": "BA-02",
+    "name": "Customer Acceptance & Onboarding",
+    "description": "Account opening decisions, acceptance criteria, rejection handling, financial inclusion."
+  },
+  {
+    "id": "BA-03",
+    "name": "Customer Identification & CDD",
+    "description": "Identification of individuals, proprietary firms and legal entities; document capture."
+  },
+  {
+    "id": "BA-04",
+    "name": "Digital & Remote Onboarding",
+    "description": "V-CIP, OTP-based e-KYC, digital KYC, non-face-to-face onboarding."
+  },
+  {
+    "id": "BA-05",
+    "name": "Beneficial Ownership",
+    "description": "Identification of natural persons owning or controlling non-individual customers."
+  },
+  {
+    "id": "BA-06",
+    "name": "Customer Risk Categorisation",
+    "description": "Low/medium/high rating, parameters, periodic review, confidentiality."
+  },
+  {
+    "id": "BA-07",
+    "name": "Transaction Monitoring & ODD",
+    "description": "Ongoing due diligence, alert generation, unusual and structured transactions."
+  },
+  {
+    "id": "BA-08",
+    "name": "Periodic KYC Updation",
+    "description": "Re-KYC cycles, intimations and reminders, BC-assisted updation, acknowledgements."
+  },
+  {
+    "id": "BA-09",
+    "name": "Enhanced Due Diligence",
+    "description": "PEPs, non-face-to-face customers, high-risk jurisdictions, professional intermediaries."
+  },
+  {
+    "id": "BA-10",
+    "name": "Sanctions & Prohibited Persons Screening",
+    "description": "UAPA Sec.51A, WMD Act Sec.12A, UNSC lists, freezing and reporting."
+  },
+  {
+    "id": "BA-11",
+    "name": "Regulatory Reporting — FIU-IND",
+    "description": "CTR, STR, NTR, CCR filing; confidentiality; no account restriction on STR alone."
+  },
+  {
+    "id": "BA-12",
+    "name": "Records & Data Management",
+    "description": "Retention periods, retrievability, CKYCR upload, DARPAN registration, secrecy."
+  },
+  {
+    "id": "BA-13",
+    "name": "Fraud Risk Governance",
+    "description": "FRM policy, SCBMF, natural justice, whistle-blower, organisational structure."
+  },
+  {
+    "id": "BA-14",
+    "name": "Early Warning Signals & Red Flagging",
+    "description": "EWS design, CBS integration, alert TAT, RFA decisioning, CRILC reporting."
+  },
+  {
+    "id": "BA-15",
+    "name": "Fraud Investigation & Classification",
+    "description": "Audit of red-flagged accounts, 180-day cycle, SCN and reasoned order, group accounts."
+  },
+  {
+    "id": "BA-16",
+    "name": "Fraud Reporting — LEA & RBI",
+    "description": "FMR filing, LEA thresholds, nodal officers, CFR and CPFIR, closure."
+  },
+  {
+    "id": "BA-17",
+    "name": "Staff Accountability & Penal Measures",
+    "description": "Time-bound accountability exams, ABBFF referral, borrower debarment."
+  },
+  {
+    "id": "BA-18",
+    "name": "Branch Operations & Instrument Handling",
+    "description": "Cheque and forged instrument frauds, instrument validity, physical security incidents."
+  },
+  {
+    "id": "BA-19",
+    "name": "Credit Administration Controls",
+    "description": "Legal audit of title documents, transfer of accounts to ARCs, third-party accountability."
+  },
+  {
+    "id": "BA-20",
+    "name": "Assurance & Internal Audit",
+    "description": "Concurrent audit, internal audit coverage of KYC and fraud processes, auditor escalation."
+  },
+  {
+    "id": "BA-21",
+    "name": "Credit Risk Governance & Policy",
+    "description": "Board-approved credit risk policy, credit risk management architecture, delegation of powers."
+  },
+  {
+    "id": "BA-22",
+    "name": "Credit Exposure Limits",
+    "description": "Single borrower and group borrower ceilings, large exposure framework, substantial exposure."
+  },
+  {
+    "id": "BA-23",
+    "name": "Credit Risk Evaluation & Appraisal",
+    "description": "Credit appraisal standards, internal rating, due diligence, sanction and review."
+  },
+  {
+    "id": "BA-24",
+    "name": "Capital Adequacy — CET1 / AT1 / Tier 2",
+    "description": "Regulatory capital composition, eligibility criteria, deductions, minimum ratios."
+  },
+  {
+    "id": "BA-25",
+    "name": "Risk-Weighted Assets Computation",
+    "description": "Standardised and internal-ratings approaches for credit, market and operational risk."
+  },
+  {
+    "id": "BA-26",
+    "name": "ICAAP & Stress Testing",
+    "description": "Internal capital adequacy assessment, scenario design, Board oversight of stress results."
+  },
+  {
+    "id": "BA-27",
+    "name": "Capital Buffers (CCB / D-SIB / CCCB)",
+    "description": "Capital conservation, domestic systemically important bank and countercyclical buffers."
+  },
+  {
+    "id": "BA-28",
+    "name": "Leverage Ratio",
+    "description": "Exposure measure, tier 1 leverage ratio computation and minimum requirement."
+  },
+  {
+    "id": "BA-29",
+    "name": "Pillar 3 Market Discipline & Disclosure",
+    "description": "Prescribed disclosure templates, frequency, medium and Board attestation."
+  },
+  {
+    "id": "BA-30",
+    "name": "Country Risk Management",
+    "description": "Country exposure limits, country risk categorisation and provisioning."
+  },
+  {
+    "id": "BA-31",
+    "name": "Unhedged Foreign Currency Exposure",
+    "description": "UFCE data collection, incremental provisioning and capital add-on."
+  },
+  {
+    "id": "BA-32",
+    "name": "Legal Entity Identifier",
+    "description": "LEI capture and renewal for borrowers above prescribed exposure thresholds."
+  },
+  {
+    "id": "BA-33",
+    "name": "Valuation of Properties & Empanelment of Valuers",
+    "description": "Valuer empanelment criteria, revaluation frequency, independence of valuation."
+  },
+  {
+    "id": "BA-34",
+    "name": "CERSAI Filing",
+    "description": "Registration and satisfaction of security interest with the central registry."
+  },
+  {
+    "id": "BA-35",
+    "name": "Credit Concentration & Sectoral Limits",
+    "description": "Sectoral, industry and counterparty concentration ceilings and monitoring."
+  },
+  {
+    "id": "BA-36",
+    "name": "Securitisation & Credit Risk Transfer",
+    "description": "Capital treatment of securitisation exposures, significant risk transfer tests."
+  },
+  {
+    "id": "BA-99",
+    "name": "Unclassified — needs manual assignment",
+    "description": "Placeholder for requirements whose business area has not yet been reconciled."
+  }
+]
